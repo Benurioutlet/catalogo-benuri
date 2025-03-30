@@ -26,8 +26,9 @@ export function Catalog({ products }) {
         <img src={logoBenuri} alt="Logo Benuri" className="logo" />
         <img src={product.image} alt={product.name} />
         <h3>{product.name}</h3>
-        <h3> Codigo: {product.codigo}</h3>
-        <h3>Tipo: {product.category}</h3>
+        <h3> <span className="codigo-texto">Codigo: </span>{product.codigo}</h3>
+        <h3> <span className="codigo-texto">Observação: </span>{product.observacao}</h3>
+        <h3><span className="codigo-texto">Tipo:</span> {product.category}</h3>
         <p>Preço: R$ {product.price}</p>
       </div>
       <div className="nav-buttons">

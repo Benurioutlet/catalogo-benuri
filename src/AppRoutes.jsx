@@ -5,21 +5,34 @@ import { ProductList } from "./pages/productList/ProductList";
 import { Category } from "./pages/category/Category";
 import { HomePage } from "./pages/homePage/HomePage";
 import logo from './image/sala_aurora_lotus - Copia.png';
+import logo1 from './image/mesa_italia - Copia.png';
+import logo2 from './image/mesa_palace - Copia.png';
+import logo3 from './image/mesa_miss - Copia.png';
+import logo4 from './image/sala_fenix_safira - Copia.png';
+import logo5 from './image/sala_carisma_veneza - Copia.png';
+import logo6 from './image/sala_frorata_veneza - Copia.png';
+import logo7 from './image/Cadeira_safira - Copia.png';
+import logo8 from './image/Cadeira_milao - Copia.png';
+import logo9 from './image/Cadeira_veneza - Copia.png';
+import logo10 from './image/canto_malta - Copia.png';
+
 import { useState } from "react";
 
 export const AppRoutes = () => {
     const [products, setProducts] = useState([
-        { id: 1, name: "Sala com 6 cadeiras corano durango", price: "3000,00", codigo: "1792", category: "Sala de Jantar", observaçao: "Vericar modelo e cor das cadeiras com vendedor", image: logo },
-        { id: 2, name: "Sala com 6 cadeiras veludo marfim", price: "3000,00", codigo: "1789", category: "Sala de Jantar", observaçao: "Vericar modelo e cor das cadeiras com vendedor", image: logo },
-        { id: 3, name: "Sala com (italia) 4 cadeiras veludo marfim", price: "1400,00", codigo: "129", category: "Sala de Jantar", observaçao: "Vericar modelo e cor das cadeiras com vendedor", image: logo },
-        { id: 4, name: "Sala com (Palace) 4 cadeiras linho inox", price: "1287,41", codigo: "131", category: "Sala de Jantar", observaçao: "Vericar modelo e cor das cadeiras com vendedor", image: logo },
-        { id: 5, name: "Sala Miss Com 4 Cadeiras Milão Vd Cold Mel/Blonde Veludo Marfim off White ", price: "2061,50", codigo: "126", category: "Sala de Jantar", observaçao: "Vericar modelo e cor das cadeiras com vendedor", image: logo },
-        { id: 6, name: "Sala Fenix com vidro off-white Com 8 Cadeiras Safira Linho Bronze ", price: "4200,00", codigo: "1773", category: "Sala de Jantar", observaçao: "Vericar modelo e cor das cadeiras com vendedor", image: logo },
-        { id: 7, name: "Sala Carisma com vidro Com 6 Cadeira Veneza Linho Bronze/Durango ", price: "2700,00", codigo: "1794", category: "Sala de Jantar", observaçao: "Vericar modelo e cor das cadeiras com vendedor", image: logo },
-        { id: 8, name: "Sala Florata com vidro Com 4 Cadeiras Veneza Linho Bronze/Durango ", price: "2100,00", codigo: "98", category: "Sala de Jantar", observaçao: "Vericar modelo e cor das cadeiras com vendedor", image: logo },
-        { id: 9, name: "Cadeira Individual ", price: "350,00", codigo: "1795", category: "Sala de Jantar", observaçao: "Vericar modelo e cor das cadeiras com vendedor", image: logo },
-        { id: 10, name: "Cadeira Individual ", price: "300,00", codigo: "1796", category: "Sala de Jantar", observaçao: "Vericar modelo e cor das cadeiras com vendedor", image: logo },
-        { id: 11, name: "Cadeira Individual ", price: "4200,00", codigo: "1797", category: "Sala de Jantar", observaçao: "Vericar modelo e cor das cadeiras com vendedor", image: logo },
+        { id: 1, name: "Sala com 6 cadeiras corano durango", price: "3000,00", codigo: "1792", category: "Sala de Jantar", observacao: "Verificar modelo e cor das cadeiras com vendedor. Trabalhamos com encomendas", image: logo },
+        { id: 2, name: "Sala com 6 cadeiras veludo marfim", price: "3000,00", codigo: "1789", category: "Sala de Jantar", observacao: "Verificar modelo e cor das cadeiras com vendedor.Trabalhamos com encomendas", image: logo },
+        { id: 3, name: "Sala com 4 cadeiras veludo marfim", price: "1400,00", codigo: "129", category: "Sala de Jantar", observacao: "Verificar modelo e cor das cadeiras com vendedor.Trabalhamos com encomendas", image: logo1 },
+        { id: 4, name: "Sala com 4 cadeiras linho inox", price: "1287,41", codigo: "131", category: "Sala de Jantar", observacao: "Verificar modelo e cor das cadeiras com vendedor.Trabalhamos com encomendas", image: logo2 },
+        { id: 5, name: "Sala Com 4 Cadeiras Veludo Marfim off White ", price: "2061,50", codigo: "126", category: "Sala de Jantar", observacao: "Verificar modelo e cor das cadeiras com vendedor.Trabalhamos com encomendas", image: logo3 },
+        { id: 6, name: "Sala com vidro off-white Com 8 Cadeiras Linho Bronze ", price: "4200,00", codigo: "1773", category: "Sala de Jantar", observacao: "Verificar modelo e cor das cadeiras com vendedor.Trabalhamos com encomendas", image: logo4 },
+        { id: 7, name: "Sala Carisma com vidro Com 6 Cadeira Linho Bronze/Durango ", price: "2700,00", codigo: "1794", category: "Sala de Jantar", observacao: "Verificar modelo e cor das cadeiras com vendedor.Trabalhamos com encomendas", image: logo5 },
+        { id: 8, name: "Sala com vidro Com 4 Cadeiras Linho Bronze/Durango ", price: "2100,00", codigo: "98", category: "Sala de Jantar", observacao: "Verificar modelo e cor das cadeiras com vendedor.Trabalhamos com encomendas", image: logo6 },
+        { id: 12, name: "Conjunto De Canto Com 2 Cadeira Mel/blonde veludo Marfim", price: "2500,00", codigo: "1771", category: "Sala de Jantar", observacao: "Verificar modelo e cor das cadeiras com vendedor.Trabalhamos com encomendas", image: logo10 },
+        { id: 9, name: "Cadeira Individual ", price: "350,00", codigo: "1795", category: "Sala de Jantar", observacao: "Verificar  cor das cadeiras com vendedor.Trabalhamos com encomendas", image: logo7 },
+        { id: 10, name: "Cadeira Individual ", price: "300,00", codigo: "1796", category: "Sala de Jantar", observacao: "Verificar cor das cadeiras com vendedor.Trabalhamos com encomendas", image: logo8 },
+        { id: 11, name: "Cadeira Individual ", price: "350,00", codigo: "1797", category: "Sala de Jantar", observacao: "Verificar cor das cadeiras com vendedor.Trabalhamos com encomendas", image: logo9 },
+      
       
     ]);
 
