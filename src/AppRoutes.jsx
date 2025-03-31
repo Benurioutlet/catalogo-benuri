@@ -19,6 +19,8 @@ import logo11 from './image/mesa_liz.png';
 import logo12 from './image/isis_6cadeiras.png';
 import logo13 from './image/isis4cadeiras.png';
 import logo14 from './image/buffet_Iaris_off.png';
+import logo15 from './image/Buffet_celta_2_porta_black.png';
+import logo16 from './image/buffet_eros.png';
 
 import { useState } from "react";
 
@@ -39,9 +41,9 @@ export const AppRoutes = () => {
         { id: 9, name: "Cadeira Individual ", price: "350,00", codigo: "1795", category: "Sala de Jantar", observacao: "Verificar  cor das cadeiras com vendedor.Trabalhamos com encomendas", image: logo7 },
         { id: 10, name: "Cadeira Individual ", price: "300,00", codigo: "1796", category: "Sala de Jantar", observacao: "Verificar cor das cadeiras com vendedor.Trabalhamos com encomendas", image: logo8 },
         { id: 11, name: "Cadeira Individual ", price: "350,00", codigo: "1797", category: "Sala de Jantar", observacao: "Verificar cor das cadeiras com vendedor.Trabalhamos com encomendas", image: logo9 },
-        { id: 16, name: "Buffet Com Adega - Off White/Freijo ", price: "655,00", codigo: "316", category: "Sala de Jantar", observacao: "Verificar modelo e cor com vendedor.Trabalhamos com encomendas", image: logo14 },
-
-      
+        { id: 16, name: "Buffet Com Adega 2 portas - Off White/Freijo ", price: "655,00", codigo: "316", category: "Sala de Jantar", observacao: "Verificar modelo e cor com vendedor.Trabalhamos com encomendas", image: logo14 },
+        { id: 17, name: "Buffet sala 2 portas - Black ", price: "499,99", codigo: "310", category: "Sala de Jantar", observacao: "Verificar modelo e cor com vendedor.Trabalhamos com encomendas", image: logo15 },
+        { id: 18, name: "Buffet sala 2 portas - Off White / Freijo ", price: "600,00", codigo: "814", category: "Sala de Jantar", observacao: "Verificar modelo e cor com vendedor.Trabalhamos com encomendas", image: logo16 },
     ]);
 
     const addProduct = (product) => {
