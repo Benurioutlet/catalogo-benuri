@@ -13,7 +13,11 @@ export const AppRoutes = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get("/api/produtos");
+                const isLocal = window.location.hostname === "localhost";
+                const API_URL = isLocal
+                ? "/api"
+                : "https://backend-benuri.onrender.com/api";
+                const response = await axios.get(`${API_URL}/produtos`);
                 setProducts(response.data); // Atualiza o estado com os produtos da API
             } catch (error) {
                 console.error("Erro ao buscar produtos:", error);
