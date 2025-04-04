@@ -1,8 +1,17 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-// Configuração do Vite
 export default defineConfig({
   plugins: [react()],
-  base: '/catalogo-benuri/',  // A base do projeto no GitHub Pages
+  base: "/catalogo-benuri/", // Base do projeto no GitHub Pages
+
+  server: {
+    proxy: {
+      "/api": {
+        target: "https://backend-benuri.onrender.com",
+        changeOrigin: true,
+        secure: false,
+      },
+    },
+  },
 });
